@@ -1,0 +1,22 @@
+.uploader {
+  display: flex;
+  color: white;
+  background-color: var(--background);
+  border: 2px #1976d2 solid;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: larger;
+  min-height: 50px;
+  height: 100%;
+}
+
+.notification {
+  position: absolute;
+  top: 75px;
+  right: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

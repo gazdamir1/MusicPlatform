@@ -1,0 +1,43 @@
+.track {
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  background-color: var(--background);
+  .cover {
+    width: 70px;
+    height: 70px;
+  }
+  .grid {
+    flex-direction: column;
+    max-width: 200px;
+    margin: 0 20px;
+    color: white;
+    .artistName {
+      font-size: 12px;
+      color: gray;
+    }
+  }
+  .deleteButtonWrapper {
+    margin-left: auto;
+  }
+}
+
+.pausePlayButton,
+.deleteButtonWrapper {
+  color: white;
+}
+
+.pausePlayButton {
+  padding-right: 8px;
+  margin-right: 10px;
+}
+
+.active {
+  outline: 2px solid #1976d2;
+  outline-offset: -2px;
+}
+
+.notactive {
+  background-color: var(--background);
+}

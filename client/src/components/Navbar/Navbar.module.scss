@@ -1,0 +1,41 @@
+.Title {
+  padding-left: 15px;
+}
+
+.iconTransition {
+  transition: transform 0.3s ease;
+}
+
+.Navigation {
+  padding-top: 70px;
+}
+
+.drawer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250px;
+  background-color: var(--secondColor);
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  z-index: 2;
+  overflow-y: auto;
+}
+
+.open {
+  transform: translateX(0);
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  background-color: var(--mainColor);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1100;
+}

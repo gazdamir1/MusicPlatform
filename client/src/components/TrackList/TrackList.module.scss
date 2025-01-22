@@ -1,0 +1,64 @@
+.trackList {
+  display: flex;
+  margin: 90px 0;
+  justify-content: center;
+
+  .trackCard {
+    width: 900px;
+    background-color: var(--secondColor);
+    color: white;
+
+    .box {
+      padding: 12px;
+
+      .center {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    .coreGrid {
+      display: flex;
+      flex-direction: column;
+
+      .box {
+        padding: 8px;
+      }
+    }
+
+    .searchBox {
+      display: flex;
+      width: 100%;
+      padding: 0 18px 0 18px;
+      max-height: 60px;
+      .textSearch {
+        flex-grow: 1;
+        color: white;
+        background-color: var(--background);
+        padding: 0 5px 0 15px;
+        margin: 0 10px 0 0;
+        border: 2px #1976d2 solid;
+        border-radius: 5px;
+        font-weight: 500;
+        font-size: larger;
+        width: 100%;
+
+        &::placeholder {
+          color: rgba(255, 255, 255, 0.708);
+        }
+      }
+
+      .searchButton {
+        flex-shrink: 0;
+        width: 60px;
+        .searchIcon {
+          height: 100%;
+        }
+      }
+
+      .textSearch,
+      .searchButton {
+        height: 60px;
+      }
+    }
+  }
+}

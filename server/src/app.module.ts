@@ -2,14 +2,16 @@ import { Module } from '@nestjs/common';
 import { TrackModule } from './track/track.module';
 import { MongooseModule } from '@nestjs/mongoose';
 import { FileModule } from './file/file.module';
-import * as path from 'path';
 import { ServeStaticModule } from '@nestjs/serve-static';
+import { join } from 'path';
 
 @Module({
   imports: [
     ServeStaticModule.forRoot({
-      rootPath: path.resolve(__dirname, 'static'),
+      rootPath: join(process.cwd(), 'static'),
+      serveRoot: '/static',
     }),
+
     MongooseModule.forRoot(
       'mongodb+srv://admin:admin@cluster0.bwzax.mongodb.net/music-platform?retryWrites=true&w=majority&appName=Cluster0',
     ),

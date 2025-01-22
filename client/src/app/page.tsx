@@ -1,5 +1,13 @@
 import { Button } from "@mui/material"
 import styles from "./page.module.css"
+import { Metadata } from "next"
+
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    title: "MusicHome",
+    description: "Здесь собраны лучшие треки",
+  }
+}
 
 export default function Home() {
   return (

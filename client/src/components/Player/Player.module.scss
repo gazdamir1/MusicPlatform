@@ -1,0 +1,44 @@
+.player {
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  background: var(--secondColor);
+  color: white;
+  z-index: 3;
+  justify-content: space-between;
+  padding-left: 58vh;
+  padding-right: 58vh;
+}
+
+.grid {
+  flex-direction: column;
+  width: 200px;
+  // margin: 0 20px;
+}
+
+.pausePlayButton {
+  color: white;
+}
+
+.VolumeUp {
+  display: flex;
+  // min-height: 24px;
+  // min-width: 24px;
+  // padding: 8px;
+  color: white;
+}
+
+.volumeSlider {
+  position: absolute;
+  bottom: 70px; /* Над плеером */
+  right: 58vh; /* Позиция над кнопкой громкости */
+  z-index: 1100;
+  background: var(--secondColor);
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}

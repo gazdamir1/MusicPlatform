@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 150px;
+  position: relative;
+}
+
+.slider {
+  writing-mode: bt-lr; // Делаем слайдер вертикальным
+  -webkit-appearance: slider-vertical; // Для поддержки WebKit-браузеров
+  height: 100%;
+  width: 8px; // Толщина слайдера
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+}
+
+.volumeLabel {
+  margin-top: 8px;
+  font-size: 14px;
+}

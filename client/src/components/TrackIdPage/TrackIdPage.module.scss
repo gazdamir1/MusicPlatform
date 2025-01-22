@@ -1,0 +1,130 @@
+.backButton {
+  display: block;
+  color: white;
+  padding: 8px 12px;
+  margin-bottom: 10px;
+  background-color: rgba(179, 240, 245, 0);
+  border: solid 1px var(--mainColor);
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: var(--mainColor);
+  }
+}
+
+.coverTrackPage {
+  height: 200px;
+  width: 200px;
+}
+
+.gridContainer {
+  margin: 20px 0;
+}
+
+.gridContainer {
+  display: flex;
+  gap: 20px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
+  .divContainer {
+    h1 {
+      line-height: 1;
+    }
+
+    h2 {
+      line-height: 1.2;
+    }
+  }
+}
+
+.commentContainer {
+  background-color: var(--background);
+  padding: 20px 0 20px 0;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+
+  .nameField,
+  .commentName {
+    flex-grow: 1;
+    color: white;
+    background-color: var(--background);
+    padding: 0 5px 0 15px;
+    margin: 0 10px 0 0;
+    border: 2px #1976d2 solid;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: larger;
+    width: 100%;
+    height: 5vh;
+
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.708);
+    }
+  }
+
+  .commentName {
+    padding-top: 10px;
+  }
+
+  button {
+    align-self: flex-start;
+    padding: 10px 20px;
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    cursor: pointer;
+    &:hover {
+      background-color: #145ea8;
+    }
+  }
+}
+
+.title {
+  color: #b0b0b0;
+}
+
+.mainContainer {
+  width: 47.5%;
+}
+
+.mainWrapper {
+  display: flex;
+  gap: 5%;
+}
+
+.words {
+  display: flex;
+  align-items: center;
+  width: 47.5%;
+  flex-direction: column;
+}
+
+.commentsList {
+  padding: 20px;
+  background-color: var(--background);
+  margin-top: 10px;
+  border: 2px #1976d2 solid;
+  border-radius: 5px;
+}
+
+.comment {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.commentAuthor {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.commentText {
+  color: white;
+}

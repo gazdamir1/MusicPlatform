@@ -1,12 +1,16 @@
 import React from "react"
-import styles from "./page.module.scss"
+import TrackList from "@/components/TrackList/TrackList"
+import { Metadata } from "next"
 
-const page = () => {
-  return (
-    <>
-      <div className={styles.trackList}>Список треков</div>
-    </>
-  )
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    title: "Список треков",
+    description: "Просмотр текущей коллекции",
+  }
 }
 
-export default page
+const Tracks = async () => {
+  return <TrackList />
+}
+
+export default Tracks
